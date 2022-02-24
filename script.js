@@ -9,8 +9,7 @@ function createDestCard(name, location, photoURL, description) {
   let img = document.createElement("img");
   img.setAttribute("alt", name);
 
-  let constantPhotoUrl =
-    "https://i4.hurimg.com/i/hurriyet/75/1110x740/5b0bf20a5379ff2048bd76f5.jpg";
+  let constantPhotoUrl = "./images/cambodia.jpg";
   if (photoURL.length === 0) {
     img.setAttribute("src", constantPhotoUrl);
   } else {
@@ -51,7 +50,6 @@ function removeDestination(e) {
 
 detailsForm.addEventListener("submit", (e) => {
   e.preventDefault();
-
 
   document;
   let destName = e.target.elements["name"].value;
